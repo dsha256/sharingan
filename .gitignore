@@ -1,1 +1,11 @@
+# Encore
 /.encore
+encore.gen.go
+encore.gen.cue
+/encore.gen
+
+# JetBrains
+/.idea
+
+# Temporary fies
+/temp
