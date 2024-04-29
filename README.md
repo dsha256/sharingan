@@ -25,11 +25,6 @@ go mod tidy
 encore run
 ```
 
-3. Install Encore(https://encore.dev/docs/install), navigate to the root folder of the project and run:
-```shell
-encore run
-```
-
 * ### Then you get two endpoints:
   - API - http://127.0.0.1:4000
   - Development Dashboard http://localhost:9400/sharingan-ynp2
