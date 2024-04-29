@@ -2,7 +2,6 @@ package request
 
 import (
 	"errors"
-	"math"
 
 	"github.com/dsha256/sharingan/internal/util"
 )
@@ -29,10 +28,6 @@ func (req *AddItem) Validate() error {
 
 	p := util.ParseFloat64(req.Price)
 	if p == 0 {
-		return ErrInvalidPrice
-	}
-
-	if p < math.SmallestNonzeroFloat64 {
 		return ErrInvalidPrice
 	}
 
