@@ -32,17 +32,26 @@ func Test_MoneyAddition(t *testing.T) {
 		},
 		{
 			Args: MoneyAdditionOptions{
-				Target:   "10.0000000000000003",
-				Addition: "1.00000000000000007",
-				Times:    2,
+				Target:   "10.1728312712816297126317231712938712937",
+				Addition: "0.1728312712816297126317231712938712937",
+				Times:    100,
 			},
-			Expected:     "12.00000000000000044",
+			Expected:     "27.4559583994446009758040403006810006637",
 			RequireError: false,
 		},
 		{
 			Args: MoneyAdditionOptions{
-				Target:   "10,0000000000000003",
-				Addition: "1.00000000000000007",
+				Target:   "10.000000000000000000000000000000000000000007",
+				Addition: "00.000000000000000000000000000000000000000001",
+				Times:    3,
+			},
+			Expected:     "10.00000000000000000000000000000000000000001",
+			RequireError: false,
+		},
+		{
+			Args: MoneyAdditionOptions{
+				Target:   "10.0000000000000003",
+				Addition: "1,00000000000000007",
 				Times:    2,
 			},
 			Expected:     "12.00000000000000044",
@@ -50,8 +59,8 @@ func Test_MoneyAddition(t *testing.T) {
 		},
 		{
 			Args: MoneyAdditionOptions{
-				Target:   "10.0000000000000003",
-				Addition: "1,00000000000000007",
+				Target:   "10,0000000000000003",
+				Addition: "1.00000000000000007",
 				Times:    2,
 			},
 			Expected:     "12.00000000000000044",
