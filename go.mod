@@ -3,9 +3,10 @@ module github.com/dsha256/sharingan
 go 1.22.1
 
 require (
-	encore.dev v1.34.3
+	encore.dev v1.41.9
 	github.com/google/uuid v1.6.0
 	github.com/shopspring/decimal v1.4.0
+	github.com/stretchr/testify v1.9.0
 	go.temporal.io/api v1.32.0
 	go.temporal.io/sdk v1.26.1
 )
@@ -21,7 +22,6 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/robfig/cron v1.2.0 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
-	github.com/stretchr/testify v1.9.0 // indirect
 	golang.org/x/exp v0.0.0-20231127185646-65229373498e // indirect
 	golang.org/x/net v0.24.0 // indirect
 	golang.org/x/sys v0.19.0 // indirect
